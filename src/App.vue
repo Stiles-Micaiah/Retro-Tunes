@@ -10,29 +10,42 @@
 
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
           <li class="nav-item active">
-            <router-link class="nav-link" to="/about">GitHub <span class="sr-only">(current)</span></router-link>
+            <router-link class="nav-link" to="/about">GitHub Projects<span class="sr-only">(current)</span>
+            </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
+            <a class="nav-link" href="https://www.linkedin.com/in/stiles-micaiah">Check out my LinkedIn!</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
+            <a class="nav-link"
+              href="https://drive.google.com/file/d/1vhPlX6RJo8KKq_uaqL8aOfjdC_2-r-Ge/view?usp=sharing">Resume</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
     <router-view />
   </div>
 </template>
 
+
+
+<!-- https://www.pixelstalk.net/wp-content/uploads/images2/Free_download_Retro_desktop_Wallpaper_HD.jpg -->
+<script>
+  export default {
+    name: "app",
+    data() {
+      return {
+        background: emitBK // !TODO fix this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      };
+    },
+    mounted() { },
+
+  };
+</script>
 <style>
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -40,6 +53,11 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+
+  .navbar-nav {
+    margin-right: auto;
+    text-align: start;
   }
 
   #nav {
