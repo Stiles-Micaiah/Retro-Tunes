@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a247663fb9ed674bf6c077fa7760e458.js"
+  "/Retro-Tunes/precache-manifest.275cca407e5ae5d21057f9fcefb31df1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "music-tunes2.0"});
